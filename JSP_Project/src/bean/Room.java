@@ -8,11 +8,10 @@ public class Room {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Room(String roomid, int amount, Domitory dom) {
+	public Room(String roomid, int amount) {
 		super();
 		this.roomid = roomid;
 		this.amount = amount;
-		this.dom = dom;
 	}
 	public String getRoomid() {
 		return roomid;

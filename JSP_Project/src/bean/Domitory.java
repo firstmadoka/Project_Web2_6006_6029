@@ -6,6 +6,13 @@ public class Domitory {
 	private String domid;
 	private String domname;
 	private List<Room> room = new ArrayList<Room>();
+	private Employee DH = new Employee();
+	public Employee getDH() {
+		return DH;
+	}
+	public void setDH(Employee dH) {
+		DH = dH;
+	}
 	public Domitory() {
 		super();
 		// TODO Auto-generated constructor stub
