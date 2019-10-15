@@ -3,8 +3,6 @@ package controller;
 import java.util.*;
 
 import bean.*;
-
-
 public class LoginManager {
 	private List<Login> login = new ArrayList<>();
 	
