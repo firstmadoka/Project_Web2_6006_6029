@@ -6,15 +6,17 @@
     	String pwd = "";
     	
     	Cookie[] cookies = request.getCookies();
-    	for(int i = 0; i<cookies.length; i++) {
-    		if("uname".equals(cookies[i].getName())){
-    			uname = cookies[i].getValue();
-    		}
+    	if(cookies != null){
+    		for(int i = 0; i<cookies.length; i++) {
+    			if("uname".equals(cookies[i].getName())){
+    				uname = cookies[i].getValue();
+    			}
     		
-    		if("pwd".equals(cookies[i].getName())){
-    			pwd = cookies[i].getValue();
-    	}
-    	}
+    			if("pwd".equals(cookies[i].getName())){
+    				pwd = cookies[i].getValue();
+    			}
+    		}
+    	}else{
     
     %>
     
@@ -56,3 +58,4 @@ password : <input type="password" name="pwd" value="<%= pwd%>"> <br>
 
 </body>
 </html>
+<% } %>
