@@ -8,9 +8,8 @@ public class LoginManager {
 	
 	public LoginManager() {
 		super();
-		login.add(new Login("admin", "1234"));
-	
-		
+		ProjectManager pjm = new ProjectManager();
+		login = pjm.getLogin();
 	}
 
 	
