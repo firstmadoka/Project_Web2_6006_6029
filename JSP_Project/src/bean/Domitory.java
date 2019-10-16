@@ -7,6 +7,13 @@ public class Domitory {
 	private String domname;
 	private List<Room> room = new ArrayList<Room>();
 	private Employee DH = new Employee();
+	private List<Room> rooms = new ArrayList<Room>();
+	public List<Room> getRooms() {
+		return rooms;
+	}
+	public void setRooms(List<Room> rooms) {
+		this.rooms = rooms;
+	}
 	public Employee getDH() {
 		return DH;
 	}
