@@ -17,6 +17,8 @@
 </style>
 </head>
 <body>
+<div class="container-fluid">
+
 	<h2 class="w3-center">Automatic Slideshow</h2>
 
 	<div class="w3-content w3-section" style="max-width: 500px">
@@ -42,9 +44,27 @@
 		<div class="w3-container w3-teal">
 			<h1>หน้าแรก</h1>
 		</div>
-			<div class="container">
+			
 			<div class="row">
-				<div class="col-4">
+				<div class="col-sm-4">
+					<img src="img_car.jpg" alt="Car" style="width: 100%">
+
+					
+						<h2>Sidebar Navigation Example</h2>
+						<p>The sidebar with is set with "style="width:25%".</p>
+						<p>The left margin of the page content is set to the same
+							value.</p>
+				</div>
+				div class="col-sm-4">
+					<img src="img_car.jpg" alt="Car" style="width: 100%">
+
+					
+						<h2>Sidebar Navigation Example</h2>
+						<p>The sidebar with is set with "style="width:25%".</p>
+						<p>The left margin of the page content is set to the same
+							value.</p>
+				</div>
+				div class="col-sm-4">
 					<img src="img_car.jpg" alt="Car" style="width: 100%">
 
 					
