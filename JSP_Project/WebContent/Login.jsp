@@ -23,8 +23,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-
-<title>Insert title here</title>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="fontawesome/css/all.css">
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<title>ระบบหอพักมหาวิทยาลัยแม่โจ้</title>
 <script type="text/javascript">
  	function check(){
  		if(document.getElementById('us1').checked == 1){
@@ -43,18 +46,44 @@
  	 </script>
 </head>
 <body>
-	<form name="frm" action="Loginservlet" method="post">
-		username : <input type="text" name="uname" value="<%= uname%>" > <br>
-		password : <input type="password" name="pwd" value="<%= pwd%>"> <br>
-		<input type="checkbox" name="remember" value="1" id="us1" onclick="check()">remember username & password<br>
-
-		<input type="checkbox" name="remember" value="2" id="us2" onclick="check2()">remember  only username <br>
-
-		<input type="submit" value="login"><br>
-	</form>
-	<% if (null != error) { %>
-		<%= error %>
-	<% } %>
-
+	<div class="container">
+		<div class="d-flex justify-content-center h-100">
+			<div class="card">
+				<div class="card-header">
+					<h3>ลงชื่อเข้าใช้ระบบหอพักมหาวิทยาลัยแม่โจ้</h3>
+				</div>
+				<div class="card-body">
+					<form name="frm" action="Loginservlet" method="post">
+						<div class="input-group form-grop">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" class="form-control" name="uname" value="<%= uname%>" placeholder="username">
+						</div>
+						<div class="input-group form-grop">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" class="form-control" name="pwd" value="<%= pwd%>" placeholder="password">
+						</div>
+						<div class="row align-items-center remember">
+							<input type="checkbox" class="form-control" name="remember" value="1" id="us1" onclick="check()">remember Me
+						</div>
+						<div class="form-group">
+							<input type="submit" value="login" class="btn float-right login_btn">
+							<% if (null != error) { %>
+								<span class="errer"><%= error %></span>
+							<% } %>
+						</div>
+					</form>
+				</div>
+				<div class="card-footer">
+					<div class="d-flex justtify-content-center">
+						<a href="#">Forgot your password</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
