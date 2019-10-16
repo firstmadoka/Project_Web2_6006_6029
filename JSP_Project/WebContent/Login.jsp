@@ -28,22 +28,6 @@
 <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/login.css">
 <title>ระบบหอพักมหาวิทยาลัยแม่โจ้</title>
-<script type="text/javascript">
- 	function check(){
- 		if(document.getElementById('us1').checked == 1){
- 			document.getElementById('us2').disabled = true ;
- 		}else{
- 			document.getElementById('us2').disabled = false ;
- 		}
- 	}
- 	function check2(){
- 		if(document.getElementById('us2').checked == 1){
- 			document.getElementById('us1').disabled = true ;
- 		}else{
- 			document.getElementById('us1').disabled = false ;
- 		}
- 	}
- 	 </script>
 </head>
 <body>
 	<div class="container">
