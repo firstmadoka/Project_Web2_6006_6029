@@ -84,7 +84,7 @@ public class Loginservlet extends HttpServlet {
 			response.sendRedirect("index.jsp");
 		}else {
 			request.setAttribute("error", "wrong username and password!! ");
-			goTo("/index.jsp", request ,response);
+			goTo("/Login.jsp", request ,response);
 		}
 
 	}
