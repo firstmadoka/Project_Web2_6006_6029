@@ -5,32 +5,32 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-  
-  
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"
-	type="text/css">
-<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<script src="bootstrap/js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<link href="fontawesome/css/all.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
 <style>
-.mySlides {
-	display: none;
-}
-</style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+ </style>
 </head>
 <body>
-	<div class="container-fluid">
+<<<<<<< HEAD
+<<<<<<< HEAD
+<div class="container-fluid">
 
-		<!-- Sidebar -->
-		<div class="w3-sidebar w3-light-grey w3-bar-block" style="width: auto">
-			<h3 class="w3-bar-item">Menu</h3>
-			<a href="#" class="w3-bar-item w3-button">หน้าแรก</a> <a href="#"
-				class="w3-bar-item w3-button">ข้อมูลหอพัก</a> <a href="#"
-				class="w3-bar-item w3-button">ตรวจสอบสถานะเช็คชื่อ</a> <a href="#"
-				class="w3-bar-item w3-button">ขออนุญาตลาหอพัก</a> <a href="#"
-				class="w3-bar-item w3-button">ออกจากระบบ</a>
-		</div>
+	
+
+
+	
+=======
+	
+<<<<<<< HEAD
+
 
 		<!-- Page Content -->
 		<div style="margin-left: 20%">
@@ -87,8 +87,115 @@
 			</div>
 		</div>
 
-	</div>
+				
+			</div>
+		</div>
+		
+				
+			</div>
 
-	
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+					var i;
+					var x = document.getElementsByClassName("mySlides");
+					for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";
+					}
+					myIndex++;
+					if (myIndex > x.length) {
+						myIndex = 1
+					}
+					x[myIndex - 1].style.display = "block";
+					setTimeout(carousel, 2000); // Change image every 2 seconds
+				}
+			</script>
+=======
+>>>>>>> branch 'master' of https://github.com/firstmadoka/Project_Web2_6006_6029.git
+=======
+	<div class="vertical-nav bg-white" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center">
+    <img src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png" alt="..." width="65" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">Jason Doe</h4>
+        <p class="font-weight-light text-muted mb-0">Web developer</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic bg-light">
+                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                Home
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                About
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                Services
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                Gallery
+            </a>
+    </li>
+  </ul>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                Area charts
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                Bar charts
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+                Pie charts
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark font-italic">
+                <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+                Line charts
+            </a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+
+<!-- End demo content -->
+<script type="text/javascript">
+ $(function() {
+	  // Sidebar toggle behavior
+	  $('#sidebarCollapse').on('click', function() {
+	    $('#sidebar, #content').toggleClass('active');
+	  });
+	});
+ </script>
+>>>>>>> branch 'master' of https://github.com/firstmadoka/Project_Web2_6006_6029.git
 </body>
-</html>
