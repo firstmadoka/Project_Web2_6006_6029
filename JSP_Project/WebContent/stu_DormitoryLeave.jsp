@@ -89,11 +89,7 @@
 
 				
 			</div>
-		</div>
 		
-				
-			</div>
-
 			<script>
 				var myIndex = 0;
 				carousel();
@@ -130,7 +126,7 @@
 
 <ul class="nav flex-column bg-white mb-0">
 			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic bg-light"> <i
+				class="nav-link text-dark font-italic "> <i
 					class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
 			</a></li>
 			<li class="nav-item"><a href="#"
@@ -142,7 +138,7 @@
 					class="fa fa-cubes mr-3 text-primary fa-fw"></i> ตรวจสถานะเช็คชื่อ
 			</a></li>
 			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
+				class="nav-link text-dark font-italic bg-light"> <i
 					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ขออนุญาตลาหอพัก
 			</a></li>
 			<li class="nav-item"><a href="#"
