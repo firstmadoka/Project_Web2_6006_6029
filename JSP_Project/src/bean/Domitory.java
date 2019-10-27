@@ -1,51 +1,52 @@
 package bean;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Domitory {
-	private String domid;
-	private String domname;
-	private List<Room> room = new ArrayList<Room>();
-	private Employee DH = new Employee();
-	private List<Room> rooms = new ArrayList<Room>();
-	public List<Room> getRooms() {
-		return rooms;
+	private String Domitoryid;
+	private String Domitoryname;
+	private List<Student> students = new ArrayList<Student>();
+	private HeadofDom head = new HeadofDom();
+	private List<News> news = new ArrayList<News>();
+	public List<News> getNews() {
+		return news;
 	}
-	public void setRooms(List<Room> rooms) {
-		this.rooms = rooms;
-	}
-	public Employee getDH() {
-		return DH;
-	}
-	public void setDH(Employee dH) {
-		DH = dH;
+	public void setNews(List<News> news) {
+		this.news = news;
 	}
 	public Domitory() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Domitory(String domid, String domname, List<Room> room) {
+	public HeadofDom getHead() {
+		return head;
+	}
+	public Domitory(String domitoryid, String domitoryname) {
 		super();
-		this.domid = domid;
-		this.domname = domname;
-		this.room = room;
+		Domitoryid = domitoryid;
+		Domitoryname = domitoryname;
 	}
-	public String getDomid() {
-		return domid;
+	public void setHead(HeadofDom head) {
+		this.head = head;
 	}
-	public void setDomid(String domid) {
-		this.domid = domid;
+	public String getDomitoryid() {
+		return Domitoryid;
 	}
-	public String getDomname() {
-		return domname;
+	public void setDomitoryid(String domitoryid) {
+		Domitoryid = domitoryid;
 	}
-	public void setDomname(String domname) {
-		this.domname = domname;
+	public String getDomitoryname() {
+		return Domitoryname;
 	}
-	public List<Room> getRoom() {
-		return room;
+	public void setDomitoryname(String domitoryname) {
+		Domitoryname = domitoryname;
 	}
-	public void setRoom(List<Room> room) {
-		this.room = room;
+	public List<Student> getStudents() {
+		return students;
 	}
+	public void setStudents(List<Student> students) {
+		this.students = students;
+	}
+
 }
