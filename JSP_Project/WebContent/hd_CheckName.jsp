@@ -68,7 +68,7 @@ tr:nth-child(even) {
 
 
 									</div>
-									<p>เลือกรหัสนักศึกษา</p>
+									<p>รหัสนักศึกษา</p>
 									&nbsp; &nbsp; &nbsp;
 									<div class="form-group row">
 										<div class="col-md-12">

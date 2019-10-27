@@ -49,7 +49,47 @@ tr:nth-child(even) {
 					<div class="row" align="center">
 						<div class="col-lg-12">
 
-							<h2> จัดการการลาหอพักของนักศึกษา <h2>
+							<h2>  จัดการการลาหอพักของนักศึกษา </h2>
+
+<form action="#" method="post">
+
+								<div class="form-group row">
+									<div class="col-md-4 ">
+
+										ชื่อหอพัก <select name="amount" id="amount">
+											<%
+												for (int j = 1; j < 5; j++) {
+											%>
+											<option value="<%=j%>"><%=j%></option>
+											<%
+												}
+											%>
+										</select>
+
+
+									</div>
+									<p> หมายเลขห้อง </p>
+									&nbsp; &nbsp; &nbsp;
+									<div class="form-group row">
+										<div class="col-md-12">
+											<input type="text" class="form-control"
+												placeholder="รหัสนักศึกษา">
+										
+										</div>
+										
+									</div>
+									<div class="col-md-3 ">
+<input type="submit" class="btn btn-success" value="ส่ง">
+</div>
+
+								</div>
+								
+								</form>
+
+
+
+
+
 
 							<form action="#" method="post">
 
@@ -147,10 +187,7 @@ tr:nth-child(even) {
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> จัดการข่าวสาร
 					</a></li>
-					<li class="nav-item"><a href="#"
-						class="nav-link text-dark font-italic "> <i
-							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> เพิ่มนักศึกษาเข้าหอพัก
-					</a></li>
+					
 					<li class="nav-item"><a href="#"
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
