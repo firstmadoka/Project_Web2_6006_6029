@@ -137,10 +137,7 @@ tr:nth-child(even) {
 					class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
 					ขออนุญาตลาหอพัก
 			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ข่าวสาร
-			</a></li>
+			
 			<li class="nav-item"><a href="#"
 				class="nav-link text-dark font-italic"> <i
 					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
