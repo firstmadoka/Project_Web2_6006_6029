@@ -121,32 +121,35 @@
   <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
 
   <ul class="nav flex-column bg-white mb-0">
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic "> <i
-					class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-address-card mr-3 text-primary fa-fw"></i> ข้อมูลหอพัก
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic "> <i
-					class="fa fa-cubes mr-3 text-primary fa-fw"></i> ตรวจสถานะเช็คชื่อ
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic bg-light"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-					ขออนุญาตลาหอพัก
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ข่าวสาร
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
-			</a></li>
-		</ul>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic "> <i
+							class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic "> <i
+							class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+							ข้อมูลหอพัก
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic"> <i
+							class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+							จัดการสถานะของนักศึกษา
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic"> <i
+							class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+							จัดการการลาหอพักของนักศึกษา
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic bg-light"> <i
+							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> จัดการข่าวสาร
+					</a></li>
+					
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic"> <i
+							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
+					</a></li>
+				</ul>
 </div>
 <!-- End vertical navbar -->
 

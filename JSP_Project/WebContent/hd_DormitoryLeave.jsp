@@ -49,7 +49,7 @@ tr:nth-child(even) {
 					<div class="row" align="center">
 						<div class="col-lg-12">
 
-							<h2> สถานะเช็คชื่อ <h2>
+							<h2> จัดการการลาหอพักของนักศึกษา <h2>
 
 							<form action="#" method="post">
 
@@ -57,11 +57,11 @@ tr:nth-child(even) {
 									<table align="center">
 										<thead>
 											<tr class="table100-head">
-												<th> วัน/เดือน/ปี </th>
-												<th> เวลาเช็คชื่อ </th>
-												<th> สถานะเช็คชื่อ </th>
-												<th> สถานะการลาหอ </th>
-												
+												<th> รหัสนักศึกษา </th>
+												<th> วันที่ลาหอพัก </th>
+												<th> วันที่กลับหอพัก </th>
+												<th> เวลาที่ยื่นขอลา </th>
+												<th> การอนุญาติลาหอพัก </th>
 											</tr>
 										</thead>
 										<tr>
@@ -69,7 +69,11 @@ tr:nth-child(even) {
 											<td>Maria Anders</td>
 											<td>Germany</td>
 											<td>Italy</td>
-											
+											<td>
+											<a href="url"> ตรวจสอบข้อมูล </a>
+											<input type="submit" class="btn btn-success " value="อนุญาต"  >
+											<input type="submit" class="btn btn-info"  value="ไม่อนุญาต"  >
+											</td>
 										</tr>
 										
 									</table>
@@ -120,32 +124,35 @@ tr:nth-child(even) {
 			class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
 
 		<ul class="nav flex-column bg-white mb-0">
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic "> <i
-					class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-address-card mr-3 text-primary fa-fw"></i> ข้อมูลหอพัก
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic bg-light"> <i
-					class="fa fa-cubes mr-3 text-primary fa-fw"></i> ตรวจสถานะเช็คชื่อ
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-					ขออนุญาตลาหอพัก
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ข่าวสาร
-			</a></li>
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
-			</a></li>
-		</ul>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic "> <i
+							class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic "> <i
+							class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+							ข้อมูลหอพัก
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic "> <i
+							class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+							จัดการสถานะของนักศึกษา
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic bg-light"> <i
+							class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+							จัดการการลาหอพักของนักศึกษา
+					</a></li>
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic"> <i
+							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> จัดการข่าวสาร
+					</a></li>
+					
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic"> <i
+							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
+					</a></li>
+				</ul>
 	</div>
 	<!-- End vertical navbar -->
 

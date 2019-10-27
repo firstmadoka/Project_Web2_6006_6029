@@ -105,8 +105,8 @@ tr:nth-child(even) {
 											<tr class="table100-head">
 												<th>วัน/เดือน/ปี</th>
 												<th>เวลาเช็คชื่อ</th>
-												<th>สถานะเช็คชื่อ</<th>
-												<th>แก้ไขสถานะ<th>
+												<th>สถานะเช็คชื่อ</</th>
+												<th>แก้ไขสถานะ</th>
 											</tr>
 										</thead>
 										<tr>
