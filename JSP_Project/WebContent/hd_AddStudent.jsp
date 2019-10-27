@@ -30,43 +30,103 @@
 <div class="row mb-4 ">
 <div class="col-md-7 text-center mx-auto">
 
-<h2 class="serif">จัดการข่าวสารหอพัก</h2>
+<h2 class="serif"> เพิ่มนักศึกษาเข้าหอพัก </h2>
 </div>
 </div>
 <div class="row">
 <div class="col-lg-8 mb-5" >
 <form action="#" method="post" >
+
 <div class="form-group row" >
 <div class="col-md-4 mb-4 mb-lg-0"  >
- หัวข้อข่าว<input type="text" class="form-control" placeholder="หัวข้อข่าว" ">
-</div><br>
+รหัสนักศึกษา <input type="text" class="form-control" placeholder=" รหัสนักศึกษา " >
+</div>
+</div>
+
+<div class="form-group row" >
+<div class="col-md-4 mb-4 mb-lg-0"  >
+ ชื่อ <input type="text" class="form-control" placeholder=" ชื่อจริง " >
+</div>
  
+</div>
+
+<div class="form-group row" >
+<div class="col-md-4 mb-4 mb-lg-0"  >
+นามสกุล <input type="text" class="form-control" placeholder=" นามสกุล " >
+</div>
 </div>
 
 <div class="form-group row">
 <div class="col-md-4">
- วันที่เขียนข่าว<input type="date" class="form-control" placeholder="dd/mm/yy">
+วัน/เดือน/ปีเกิด <input type="date" class="form-control" placeholder="">
 </div>
 </div>
 
+<div class="form-group row" >
+<div class="col-md-4 mb-4 mb-lg-0"  >
+เพศ <input type="radio" name="gender" value="male" checked> Male
+  <input type="radio" name="gender" value="female"> Female<br>
+</div>
+ 
+</div>
+
+<div class="form-group row" >
+<div class="col-md-4 mb-4 mb-lg-0"  >
+เบอร์ติดต่อ <input type="tel" class="form-control" placeholder=" เบอร์ติดต่อ " >
+</div>
+</div>
+
+<div class="form-group row" >
+<div class="col-md-4 mb-4 mb-lg-0"  >
+คณะที่ศึกษา <input type="text" class="form-control" placeholder=" ชื่อคณะ " >
+</div>
+</div>
+
+<div class="form-group row" >
+<div class="col-md-4 mb-4 mb-lg-0"  >
+สาขาที่ศึกษา <input type="text" class="form-control" placeholder=" ชื่อสาขา " >
+</div>
+</div>
 
 <div class="form-group row">
 <div class="col-md-12">
-รายละเอียดข่าวสาร<textarea name="" id="" class="form-control" placeholder="รายละเอียดข่าวสาร" cols="30" rows="10"></textarea>
+ที่อยู่ <textarea name="" id="" class="form-control" placeholder="รายละเอียดข่าวสาร" cols="10" rows="10"></textarea>
+</div>
+</div>
+
+<div class="form-group row">
+							<div class="col-md-4 mb-4 mb-lg-0">
+								ชื่อหอพัก <select name="amount" id="amount">
+									<%
+										for (int j = 1; j < 5; j++) {
+									%>
+									<option value="<%=j%>"><%=j%></option>
+									<%
+										}
+									%>
+								</select>
+							</div>
+							<br>
+
+						</div>
+
+<div class="form-group row" >
+<div class="col-md-4 mb-4 mb-lg-0"  >
+หมายเลขห้อง <input type="text" class="form-control" placeholder=" หมายเลขห้อง " >
 </div>
 </div>
 
 <div class="form-group row">
 <div class="col-md-12">
-เพิ่มรูปภาพ  &nbsp; <input type="file"  placeholder="">
+เพิ่มรูปภาพนักศึกษา  &nbsp; <input type="file"  placeholder="">
 </div>
 </div>
 <div class="form-group row">
 <div class="col-md-3 ">
-<input type="submit" class="btn btn-success" value="ส่ง">
+<input type="submit" class="btn btn-success" value=" บันทึก ">
 </div>
 <div class="col-md-3 ">
-<input type="reset" class="btn btn-success"ยกเลิก">
+<input type="reset" class="btn btn-success" value=" เคลียร์ ">
 </div>
 </div>
 
@@ -141,13 +201,14 @@
 							จัดการการลาหอพักของนักศึกษา
 					</a></li>
 					<li class="nav-item"><a href="#"
-						class="nav-link text-dark font-italic bg-light"> <i
+						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> จัดการข่าวสาร
 					</a></li>
 					<li class="nav-item"><a href="#"
-						class="nav-link text-dark font-italic "> <i
+						class="nav-link text-dark font-italic bg-light"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> เพิ่มนักศึกษาเข้าหอพัก
 					</a></li>
+					
 					<li class="nav-item"><a href="#"
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ

@@ -147,7 +147,10 @@ tr:nth-child(even) {
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> จัดการข่าวสาร
 					</a></li>
-					
+					<li class="nav-item"><a href="#"
+						class="nav-link text-dark font-italic "> <i
+							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> เพิ่มนักศึกษาเข้าหอพัก
+					</a></li>
 					<li class="nav-item"><a href="#"
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
