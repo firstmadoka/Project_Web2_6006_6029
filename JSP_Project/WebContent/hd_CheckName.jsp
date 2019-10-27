@@ -56,7 +56,7 @@ tr:nth-child(even) {
 								<div class="form-group row">
 									<div class="col-md-4 ">
 
-										เลือกห้อง<select name="amount" id="amount">
+										ชื่อหอพัก <select name="amount" id="amount">
 											<%
 												for (int j = 1; j < 5; j++) {
 											%>
