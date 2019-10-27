@@ -22,106 +22,81 @@
 	<div style="margin-left: 20%">
 
 
-		<div class="w3-container w3-teal">
-			<h1>หน้าแรก</h1>
-		</div>
+<div class="container">
+        <div class="row mb-5 ">
+          <div class="col-md-7 text-center mx-auto">
+            
+            <h2 class="serif">News</h2>
+          </div>
+        </div>
 
-		<div class="row" style="margin-top: 0;">
-			<div class="col-md-6">
-				<a href="wtms_newsDetail.aspx?nID=16526"
-					style="display: block; width: 100%; margin-bottom: 15px;"><div
-						style="background: url(img/d1.jpg) no-repeat center; background-size: 200px; width: 160px; height: 120px; float: left;"></div>
-					<div style="margin-left: 170px;">
-						<strong style="font-size: 16px;"><h5>หอเทพนฤมิต</h5>
-						<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
+        <div class="row">
+          <div class="col-md-6">
+            <div class="post-entry-1 h-100">
+              <a href="single.html">
+                <img src="img/d2.jpg" alt="Image" class="img-fluid">
+              </a>
+              <div class="post-entry-1-contents">
+                
+                <h2><a href="single.html">>หอเทพนฤมิต</</a></h2>
+                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
+                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
 							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p> </strong>
-						<div class="text-black-50">ดู :1067 ครั้ง, 23/8/2559
-							10:11:50</div>
-					</div>
-					<div style="clear: both;"></div></a>
-			</div>
-			
-			<div class="col-md-6">
-				<a href="wtms_newsDetail.aspx?nID=16526"
-					style="display: block; width: 100%; margin-bottom: 15px;"><div
-						style="background: url(img/d2.jpg) no-repeat center; background-size: 200px; width: 160px; height: 120px; float: left;"></div>
-					<div style="margin-left: 170px;">
-						<strong style="font-size: 16px;"><h5>หอวิทยศิลป์</h5>
-						<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
+							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก<<</ </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="post-entry-1 h-100">
+              <a href="single.html">
+                <img src="img/d1.jpg" alt="Image" class="img-fluid">
+              </a>
+              <div class="post-entry-1-contents">
+                
+                <h2><a href="single.html">หอวิทยศิลป์</<            </a></h2>
+                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
+                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
 							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p> </strong>
-						<div class="text-black-50">ดู :1067 ครั้ง, 23/8/2559
-							10:11:50</div>
-					</div>
-					<div style="clear: both;"></div></a>
-			</div>
-			
-			<div class="col-md-6">
-				<a href="wtms_newsDetail.aspx?nID=16526"
-					style="display: block; width: 100%; margin-bottom: 15px;"><div
-						style="background: url(img/d1.jpg) no-repeat center; background-size: 200px; width: 160px; height: 120px; float: left;"></div>
-					<div style="margin-left: 170px;">
-						<strong style="font-size: 16px;"><h5>หอเทพนฤมิต</h5>
-						<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
+							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="post-entry-1 h-100">
+              <a href="single.html">
+                <img src="img/d1.jpg" alt="Image" class="img-fluid">
+              </a>
+              <div class="post-entry-1-contents">
+                
+                <h2><a href="single.html">หอวิทยศิลป์</<            </a></h2>
+                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
+                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
 							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p> </strong>
-						<div class="text-black-50">ดู :1067 ครั้ง, 23/8/2559
-							10:11:50</div>
-					</div>
-					<div style="clear: both;"></div></a>
-			</div>
-			
-			<div class="col-md-6">
-				<a href="wtms_newsDetail.aspx?nID=16526"
-					style="display: block; width: 100%; margin-bottom: 15px;"><div
-						style="background: url(img/d2.jpg) no-repeat center; background-size: 200px; width: 160px; height: 120px; float: left;"></div>
-					<div style="margin-left: 170px;">
-						<strong style="font-size: 16px;"><h5>หอวิทยศิลป์</h5>
-						<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
+							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="post-entry-1 h-100">
+              <a href="single.html">
+                <img src="img/d1.jpg" alt="Image" class="img-fluid">
+              </a>
+              <div class="post-entry-1-contents">
+                
+                <h2><a href="single.html">หอวิทยศิลป์</<            </a></h2>
+                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
+                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
 							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p> </strong>
-						<div class="text-black-50">ดู :1067 ครั้ง, 23/8/2559
-							10:11:50</div>
-					</div>
-					<div style="clear: both;"></div></a>
-			</div>
-			
-			<div class="col-md-6">
-				<a href="wtms_newsDetail.aspx?nID=16526"
-					style="display: block; width: 100%; margin-bottom: 15px;"><div
-						style="background: url(img/d1.jpg) no-repeat center; background-size: 200px; width: 160px; height: 120px; float: left;"></div>
-					<div style="margin-left: 170px;">
-						<strong style="font-size: 16px;"><h5>หอเทพนฤมิต</h5>
-						<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p> </strong>
-						<div class="text-black-50">ดู :1067 ครั้ง, 23/8/2559
-							10:11:50</div>
-					</div>
-					<div style="clear: both;"></div></a>
-			</div>
-			
-			<div class="col-md-6">
-				<a href="wtms_newsDetail.aspx?nID=16526"
-					style="display: block; width: 100%; margin-bottom: 15px;"><div
-						style="background: url(img/d2.jpg) no-repeat center; background-size: 200px; width: 160px; height: 120px; float: left;"></div>
-					<div style="margin-left: 170px;">
-						<strong style="font-size: 16px;"><h5>หอวิทยศิลป์</h5>
-						<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p> </strong>
-						<div class="text-black-50">ดู :1067 ครั้ง, 23/8/2559
-							10:11:50</div>
-					</div>
-					<div style="clear: both;"></div></a>
-			</div>
-			
-			</div>
-			
-		</div>
-		
-		
+							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
 
 
 
