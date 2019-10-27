@@ -33,7 +33,8 @@ tr:nth-child(even) {
 	background-color: #dddddd;
 }
 </style>
-
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<<<<<<< HEAD <<<<<<< HEAD
@@ -41,68 +42,118 @@ tr:nth-child(even) {
 
 
 
-<div style="margin-left: 20%">
-<div class="site-section">
-<div class="container">
+		<div style="margin-left: 20%">
+			<div class="site-section">
+				<div class="container">
 
-		<div class="row" align="center">
-			<div class="col-sm-12" >
+					<div class="row" align="center">
+						<div class="col-sm-12">
 
-				<h2>สถานะเช็คชื่อ</h2>
- 	<form action="#" method="post">
-<div class="form-group row">
-				<table align="center">
-					<tr>
-						<th>วัน/เดือน/ปี</th>
-						<th>เวลาเช็คชื่อ</th>
-						<th>สถานะเช็คชื่อ</th>
-						<th>สถานะการลาหอ</th>
-					</tr>
-					<tr>
-						<td>Alfreds Futterkiste</td>
-						<td>Maria Anders</td>
-						<td>Germany</td>
-						<td>Germany</td>
-					</tr>
-					<tr>
-						<td>Centro comercial Moctezuma</td>
-						<td>Francisco Chang</td>
-						<td>Mexico</td>
-						<td>Germany</td>
-					</tr>
-					<tr>
-						<td>Ernst Handel</td>
-						<td>Roland Mendel</td>
-						<td>Austria</td>
-						<td>Germany</td>
-					</tr>
-					<tr>
-						<td>Island Trading</td>
-						<td>Helen Bennett</td>
-						<td>UK</td>
-						<td>Germany</td>
-					</tr>
-					<tr>
-						<td>Laughing Bacchus Winecellars</td>
-						<td>Yoshi Tannamuri</td>
-						<td>Canada</td>
-						<td>Germany</td>
-					</tr>
-					<tr>
-						<td>Magazzini Alimentari Riuniti</td>
-						<td>Giovanni Rovelli</td>
-						<td>Italy</td>
-						<td>Germany</td>
-					</tr>
-				</table>
+							<h2>สถานะเช็คชื่อ</h2>
+							
+							<form action="#" method="post">
+
+								<div class="form-group row">
+									<div class="col-md-4 ">
+
+										เลือกห้อง<select name="amount" id="amount">
+											<%
+												for (int j = 1; j < 5; j++) {
+											%>
+											<option value="<%=j%>"><%=j%></option>
+											<%
+												}
+											%>
+										</select>
+
+
+									</div>
+									<p>เลือกรหัสนักศึกษา</p>
+									&nbsp; &nbsp; &nbsp;
+									<div class="form-group row">
+										<div class="col-md-12">
+											<input type="text" class="form-control"
+												placeholder="รหัสนักศึกษา">
+										
+										</div>
+										
+									</div>
+									<div class="col-md-3 ">
+<input type="submit" class="btn btn-success" value="ส่ง">
+</div>
+
+								</div>
+								
+								</form>
+							
+							
+							
+							
+							
+							
+							
+							
+							<form action="#" method="post">
+
+								
+								
+<!-- ------------------------------------------------- -->
+
+								<div class="form-group row">
+									<table align="center">
+										<thead>
+											<tr class="table100-head">
+												<th>วัน/เดือน/ปี</th>
+												<th>เวลาเช็คชื่อ</th>
+												<th>สถานะเช็คชื่อ</th>
+												<th>สถานะการลาหอ</th>
+											</tr>
+										</thead>
+										<tr>
+											<td>Alfreds Futterkiste</td>
+											<td>Maria Anders</td>
+											<td>Germany</td>
+											<td>Germany</td>
+										</tr>
+										<tr>
+											<td>Centro comercial Moctezuma</td>
+											<td>Francisco Chang</td>
+											<td>Mexico</td>
+											<td>Germany</td>
+										</tr>
+										<tr>
+											<td>Ernst Handel</td>
+											<td>Roland Mendel</td>
+											<td>Austria</td>
+											<td>Germany</td>
+										</tr>
+										<tr>
+											<td>Island Trading</td>
+											<td>Helen Bennett</td>
+											<td>UK</td>
+											<td>Germany</td>
+										</tr>
+										<tr>
+											<td>Laughing Bacchus Winecellars</td>
+											<td>Yoshi Tannamuri</td>
+											<td>Canada</td>
+											<td>Germany</td>
+										</tr>
+										<tr>
+											<td>Magazzini Alimentari Riuniti</td>
+											<td>Giovanni Rovelli</td>
+											<td>Italy</td>
+											<td>Germany</td>
+										</tr>
+									</table>
+								</div>
+							</form>
+						</div>
+					</div>
 				</div>
-				</form>
+
 			</div>
 		</div>
-		</div>
-
-</div>
-</div>
 	</div>
 
 	<script>
@@ -164,7 +215,7 @@ tr:nth-child(even) {
 					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ข่าวสาร
 			</a></li>
 			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i>
+				class="nav-link text-dark font-italic"> <i
 					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
 			</a></li>
 		</ul>

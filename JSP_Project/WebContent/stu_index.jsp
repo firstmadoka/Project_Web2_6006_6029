@@ -38,7 +38,7 @@
               </a>
               <div class="post-entry-1-contents">
                 
-                <h2><a href="single.html">>หอเทพนฤมิต</</a></h2>
+                <h2><a href="single.html">หอเทพนฤมิต</</a></h2>
                 <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
                 <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
 							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก

@@ -57,16 +57,16 @@
 </div>
 
 <div class="form-group row">
-<div class="col-md-5">
-เพิ่มรูปภาพ<input type="file" class="form-control" placeholder="">
+<div class="col-md-12">
+เพิ่มรูปภาพ  &nbsp; <input type="file"  placeholder="">
 </div>
 </div>
 <div class="form-group row">
 <div class="col-md-3 ">
-<input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="บันทึก">
+<input type="submit" class="btn btn-success" value="ส่ง">
 </div>
 <div class="col-md-3 ">
-<input type="reset" class="btn btn-block btn-primary text-white py-3 px-5" value="ยกเลิก">
+<input type="reset" class="btn btn-success"ยกเลิก">
 </div>
 </div>
 
