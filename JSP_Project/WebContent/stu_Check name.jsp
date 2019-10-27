@@ -33,7 +33,7 @@ tr:nth-child(even) {
 	background-color: #dddddd;
 }
 </style>
-</style>
+
 </head>
 <body>
 	<<<<<<< HEAD <<<<<<< HEAD
@@ -42,13 +42,16 @@ tr:nth-child(even) {
 
 
 <div style="margin-left: 20%">
+<div class="site-section">
+<div class="container">
 
-		<div class="row">
-			<div class="col-sm-12">
+		<div class="row" align="center">
+			<div class="col-sm-12" >
 
-				<h2>HTML Table</h2>
-
-				<table>
+				<h2>สถานะเช็คชื่อ</h2>
+ 	<form action="#" method="post">
+<div class="form-group row">
+				<table align="center">
 					<tr>
 						<th>วัน/เดือน/ปี</th>
 						<th>เวลาเช็คชื่อ</th>
@@ -92,11 +95,14 @@ tr:nth-child(even) {
 						<td>Germany</td>
 					</tr>
 				</table>
+				</div>
+				</form>
 			</div>
 		</div>
 		</div>
 
-
+</div>
+</div>
 	</div>
 
 	<script>
@@ -158,7 +164,7 @@ tr:nth-child(even) {
 					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ข่าวสาร
 			</a></li>
 			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic"> <i
+				class="nav-link text-dark font-italic"> <i>
 					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
 			</a></li>
 		</ul>

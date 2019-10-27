@@ -61,9 +61,9 @@
 */
 
 body {
-  background: #599fd9;
-  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
-  background: linear-gradient(to right, #599fd9, #c2e59c);
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF);
+  background: linear-gradient(to right, #FFFFFFห, #FFFFFF);
   min-height: 100vh;
   overflow-x: hidden;
 }
