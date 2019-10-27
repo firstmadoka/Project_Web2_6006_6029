@@ -105,45 +105,57 @@ tr:nth-child(even) {
 											<tr class="table100-head">
 												<th>วัน/เดือน/ปี</th>
 												<th>เวลาเช็คชื่อ</th>
-												<th>สถานะเช็คชื่อ</th>
-												<th>สถานะการลาหอ</th>
+												<th>สถานะเช็คชื่อ</<th>
+												<th>แก้ไขสถานะ<th>
 											</tr>
 										</thead>
 										<tr>
 											<td>Alfreds Futterkiste</td>
 											<td>Maria Anders</td>
 											<td>Germany</td>
-											<td>Germany</td>
+											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											</td>
 										</tr>
 										<tr>
 											<td>Centro comercial Moctezuma</td>
 											<td>Francisco Chang</td>
 											<td>Mexico</td>
-											<td>Germany</td>
+											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											</td>
 										</tr>
 										<tr>
 											<td>Ernst Handel</td>
 											<td>Roland Mendel</td>
 											<td>Austria</td>
-											<td>Germany</td>
+											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											</td>
 										</tr>
 										<tr>
 											<td>Island Trading</td>
 											<td>Helen Bennett</td>
 											<td>UK</td>
-											<td>Germany</td>
+											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											</td>
 										</tr>
 										<tr>
 											<td>Laughing Bacchus Winecellars</td>
 											<td>Yoshi Tannamuri</td>
 											<td>Canada</td>
-											<td>Germany</td>
+											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											</td>
 										</tr>
 										<tr>
 											<td>Magazzini Alimentari Riuniti</td>
 											<td>Giovanni Rovelli</td>
 											<td>Italy</td>
-											<td>Germany</td>
+											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											</td>
 										</tr>
 									</table>
 								</div>

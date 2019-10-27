@@ -50,11 +50,11 @@
 
 							<div class="form-group row">
 								<div class="col-md-3 ">
-									<input type="submit" class="btn btn-outline-success"
+									<input type="submit" class="btn btn-success"
 										value="แก้ไข">
 								</div>
 								<div class="col-md-3 ">
-									<input type="reset" class="btn btn-outline-success"
+									<input type="reset" class="btn btn-success"
 										value="ลบ">
 								</div>
 							</div>
@@ -113,11 +113,11 @@
 									
 									<div class="form-group row">
 								<div class="col-md-3 ">
-									<input type="submit" class="btn btn-outline-success"
+									<input type="submit" class="btn btn-success"
 										value="แก้ไข">
 								</div>
 								<div class="col-md-3 ">
-									<input type="reset" class="btn btn-outline-success"
+									<input type="reset" class="btn btn-success"
 										value="ลบ">
 								</div>
 							</div>
@@ -145,11 +145,11 @@
 									
 									<div class="form-group row">
 								<div class="col-md-3 ">
-									<input type="submit" class="btn btn-outline-success"
+									<input type="submit" class="btn btn-success"
 										value="แก้ไข">
 								</div>
 								<div class="col-md-3 ">
-									<input type="reset" class="btn btn-outline-success"
+									<input type="reset" class="btn btn-success"
 										value="ลบ">
 								</div>
 							</div>
