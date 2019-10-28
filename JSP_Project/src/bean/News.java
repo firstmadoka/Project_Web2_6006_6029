@@ -2,23 +2,38 @@ package bean;
 
 import java.util.Calendar;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="news")
 public class News {
-	private String newstitle;
-	private String newsdiscription;
+	@Id
 	private Calendar newscreated = Calendar.getInstance();
+	@Column(name="newstitle")
+	private String newstitle;
+	@Column(name="newsdiscription")
+	private String newsdiscription;
+	@Column(name="hints")
 	private int hints;
-	private Domitory dom = new Domitory();
-	private HeadofDom headdom = new HeadofDom();
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="peopleid")
+	private People people;
 	public News() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public News(String newstitle, String newsdiscription, Calendar newscreated, int hints) {
+	public News(Calendar newscreated, String newstitle, String newsdiscription, int hints) {
 		super();
+		this.newscreated = newscreated;
 		this.newstitle = newstitle;
 		this.newsdiscription = newsdiscription;
-		this.newscreated = newscreated;
 		this.hints = hints;
+	}
+	public Calendar getNewscreated() {
+		return newscreated;
+	}
+	public void setNewscreated(Calendar newscreated) {
+		this.newscreated = newscreated;
 	}
 	public String getNewstitle() {
 		return newstitle;
@@ -32,28 +47,16 @@ public class News {
 	public void setNewsdiscription(String newsdiscription) {
 		this.newsdiscription = newsdiscription;
 	}
-	public Calendar getNewscreated() {
-		return newscreated;
-	}
-	public void setNewscreated(Calendar newscreated) {
-		this.newscreated = newscreated;
-	}
 	public int getHints() {
 		return hints;
 	}
 	public void setHints(int hints) {
 		this.hints = hints;
 	}
-	public Domitory getDom() {
-		return dom;
+	public People getPeople() {
+		return people;
 	}
-	public void setDom(Domitory dom) {
-		this.dom = dom;
-	}
-	public HeadofDom getHeaddom() {
-		return headdom;
-	}
-	public void setHeaddom(HeadofDom headdom) {
-		this.headdom = headdom;
+	public void setPeople(People people) {
+		this.people = people;
 	}
 }

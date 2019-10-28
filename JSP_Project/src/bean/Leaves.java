@@ -2,33 +2,34 @@ package bean;
 
 import java.util.Calendar;
 
-public class Leave {
-	private CreateDayLeave createday = new CreateDayLeave();
-	private Student student = new Student();
-	private Calendar checkout = Calendar.getInstance();
-	private Calendar checkin = Calendar.getInstance();
+import javax.persistence.*;
+
+@Entity
+@Table(name="leaves")
+public class Leaves {
+	@EmbeddedId
+	private LeaveID pk = new LeaveID();
+	@Column(name="checkout")
+	private Calendar checkout;
+	@Column(name="checkin")
+	private Calendar checkin;
+	@Column(name="detail")
 	private String detail;
-	public Leave() {
+	public Leaves() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Leave(Calendar checkout, Calendar checkin, String detail) {
+	public Leaves(Calendar checkout, Calendar checkin, String detail) {
 		super();
 		this.checkout = checkout;
 		this.checkin = checkin;
 		this.detail = detail;
 	}
-	public CreateDayLeave getCreateday() {
-		return createday;
+	public LeaveID getPk() {
+		return pk;
 	}
-	public void setCreateday(CreateDayLeave createday) {
-		this.createday = createday;
-	}
-	public Student getStudent() {
-		return student;
-	}
-	public void setStudent(Student student) {
-		this.student = student;
+	public void setPk(LeaveID pk) {
+		this.pk = pk;
 	}
 	public Calendar getCheckout() {
 		return checkout;

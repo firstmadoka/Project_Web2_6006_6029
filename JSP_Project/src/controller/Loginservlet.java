@@ -81,7 +81,7 @@ public class Loginservlet extends HttpServlet {
 		if(result) {
 			session.setAttribute("login", login);
 			session.setMaxInactiveInterval(60*15);
-			response.sendRedirect("index.jsp");
+			response.sendRedirect("stu_index.jsp");
 		}else {
 			request.setAttribute("error", "wrong username and password!! ");
 			goTo("/Login.jsp", request ,response);

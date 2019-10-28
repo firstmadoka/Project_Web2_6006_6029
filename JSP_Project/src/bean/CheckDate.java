@@ -2,36 +2,46 @@ package bean;
 
 import java.util.Calendar;
 
+import javax.persistence.*;
+
+@Entity
+@Table
 public class CheckDate {
-	private Student student = new Student();
-	private Calendar check = Calendar.getInstance();
+	@Id
+	@Column(name="datechk")
+	private Calendar datechk = Calendar.getInstance();
+	@Column(name="location")
 	private String location;
-	public CheckDate(Calendar check, String location) {
-		super();
-		this.check = check;
-		this.location = location;
-	}
-	public String getLocation() {
-		return location;
+	@Column(name="status")
+	private String status;
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name="peopleid")
+	private People people;
+	public Calendar getDatechk() {
+		return datechk;
 	}
 	public CheckDate() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public CheckDate(Calendar check) {
+	public CheckDate(Calendar datechk, String location) {
 		super();
-		this.check = check;
+		this.datechk = datechk;
+		this.location = location;
 	}
-	public Student getStudent() {
-		return student;
+	public void setDatechk(Calendar datechk) {
+		this.datechk = datechk;
 	}
-	public void setStudent(Student student) {
-		this.student = student;
+	public String getLocation() {
+		return location;
 	}
-	public Calendar getCheck() {
-		return check;
+	public void setLocation(String location) {
+		this.location = location;
 	}
-	public void setCheck(Calendar check) {
-		this.check = check;
+	public People getPeople() {
+		return people;
+	}
+	public void setPeople(People people) {
+		this.people = people;
 	}
 }

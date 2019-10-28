@@ -4,31 +4,43 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="createdayleave")
 public class CreateDayLeave {
-	private HeadofDom head = new HeadofDom();
-	private Calendar checkout = Calendar.getInstance();
-	private Calendar checkin = Calendar.getInstance();
-	private List<Leave> leave = new ArrayList<Leave>();
-	public List<Leave> getLeave() {
-		return leave;
+	@Id
+	private String dayleaveid;
+	@Column(name="checkout")
+	private Calendar checkout;
+	@Column(name="checkin")
+	private Calendar checkin;
+	@ManyToOne
+	@JoinColumn(name="peopleid")
+	private People people;
+	@OneToMany(cascade = {CascadeType.ALL},mappedBy="pk.dayleave")
+	private List<Leaves> leaves = new ArrayList<Leaves>();
+	public List<Leaves> getLeaves() {
+		return leaves;
 	}
-	public void setLeave(List<Leave> leave) {
-		this.leave = leave;
+	public void setLeaves(List<Leaves> leaves) {
+		this.leaves = leaves;
 	}
 	public CreateDayLeave() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public CreateDayLeave(Calendar checkout, Calendar checkin) {
+	public CreateDayLeave(String dayleaveid, Calendar checkout, Calendar checkin) {
 		super();
+		this.dayleaveid = dayleaveid;
 		this.checkout = checkout;
 		this.checkin = checkin;
 	}
-	public HeadofDom getHead() {
-		return head;
+	public String getDayleaveid() {
+		return dayleaveid;
 	}
-	public void setHead(HeadofDom head) {
-		this.head = head;
+	public void setDayleaveid(String dayleaveid) {
+		this.dayleaveid = dayleaveid;
 	}
 	public Calendar getCheckout() {
 		return checkout;
@@ -41,5 +53,11 @@ public class CreateDayLeave {
 	}
 	public void setCheckin(Calendar checkin) {
 		this.checkin = checkin;
+	}
+	public People getPeople() {
+		return people;
+	}
+	public void setPeople(People people) {
+		this.people = people;
 	}
 }
