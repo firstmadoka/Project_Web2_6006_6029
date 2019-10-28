@@ -111,8 +111,8 @@ tr:nth-child(even) {
 											<td>Italy</td>
 											<td>
 											<a href="url"> ตรวจสอบข้อมูล </a>
-											<input type="submit" class="btn btn-success " value="อนุญาต"  >
-											<input type="submit" class="btn btn-info"  value="ไม่อนุญาต"  >
+											<input type="submit" class="btn btn-outline-success " value="อนุญาต"  >
+											<input type="submit" class="btn btn-outline-danger"  value="ไม่อนุญาต"  >
 											</td>
 										</tr>
 										

@@ -63,10 +63,10 @@
 </div>
 <div class="form-group row">
 <div class="col-md-3 ">
-<input type="submit" class="btn btn-success" value="ส่ง">
+<input type="submit" class="btn btn-outline-success" value="ส่ง">
 </div>
 <div class="col-md-3 ">
-<input type="reset" class="btn btn-success"ยกเลิก">
+<input type="reset" class="btn btn-outline-danger"ยกเลิก">
 </div>
 </div>
 

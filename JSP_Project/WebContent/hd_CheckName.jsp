@@ -113,48 +113,48 @@ tr:nth-child(even) {
 											<td>Alfreds Futterkiste</td>
 											<td>Maria Anders</td>
 											<td>Germany</td>
-											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
-											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											<td><input type="submit" class="btn btn-outline-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-outline-info"  value="บันทึก"  >
 											</td>
 										</tr>
 										<tr>
 											<td>Centro comercial Moctezuma</td>
 											<td>Francisco Chang</td>
 											<td>Mexico</td>
-											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
-											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											<td><input type="submit" class="btn btn-outline-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-outline-info"  value="บันทึก"  >
 											</td>
 										</tr>
 										<tr>
 											<td>Ernst Handel</td>
 											<td>Roland Mendel</td>
 											<td>Austria</td>
-											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
-											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											<td><input type="submit" class="btn btn-outline-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-outline-info"  value="บันทึก"  >
 											</td>
 										</tr>
 										<tr>
 											<td>Island Trading</td>
 											<td>Helen Bennett</td>
 											<td>UK</td>
-											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
-											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											<td><input type="submit" class="btn btn-outline-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-outline-info"  value="บันทึก"  >
 											</td>
 										</tr>
 										<tr>
 											<td>Laughing Bacchus Winecellars</td>
 											<td>Yoshi Tannamuri</td>
 											<td>Canada</td>
-											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
-											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											<td><input type="submit" class="btn btn-outline-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-outline-info"  value="บันทึก"  >
 											</td>
 										</tr>
 										<tr>
 											<td>Magazzini Alimentari Riuniti</td>
 											<td>Giovanni Rovelli</td>
 											<td>Italy</td>
-											<td><input type="submit" class="btn btn-success " value="แก้ไข"  >
-											<input type="submit" class="btn btn-info"  value="บันทึก"  >
+											<td><input type="submit" class="btn btn-outline-success " value="แก้ไข"  >
+											<input type="submit" class="btn btn-outline-info"  value="บันทึก"  >
 											</td>
 										</tr>
 									</table>
