@@ -200,34 +200,34 @@
 					class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
 
 				<ul class="nav flex-column bg-white mb-0">
-					<li class="nav-item"><a href="#"
+					<li class="nav-item"><a href="hd_index.jsp"
 						class="nav-link text-dark font-italic "> <i
 							class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
 					</a></li>
-					<li class="nav-item"><a href="#"
+					<li class="nav-item"><a href="hd_DormitoryData.jsp"
 						class="nav-link text-dark font-italic bg-light"> <i
 							class="fa fa-address-card mr-3 text-primary fa-fw"></i>
 							ข้อมูลหอพัก
 					</a></li>
-					<li class="nav-item"><a href="#"
+					<li class="nav-item"><a href="hd_CheckName.jsp"
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-							จัดการสถานะของนักศึกษา
+							ตรวจสถานะเช็คชื่อ
 					</a></li>
-					<li class="nav-item"><a href="#"
+					<li class="nav-item"><a href="hd_DormitoryLeave.jsp"
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-							จัดการการลาหอพักของนักศึกษา
+							ขออนุญาตลาหอพัก
 					</a></li>
-					<li class="nav-item"><a href="#"
+					<li class="nav-item"><a href="hd_EditNews.jsp"
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> จัดการข่าวสาร
 					</a></li>
-					<li class="nav-item"><a href="#"
+					<li class="nav-item"><a href="hd_AddStudent.jsp"
 						class="nav-link text-dark font-italic "> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> เพิ่มนักศึกษาเข้าหอพัก
 					</a></li>
-					<li class="nav-item"><a href="#"
+					<li class="nav-item"><a href="Login.jsp"
 						class="nav-link text-dark font-italic"> <i
 							class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
 					</a></li>
