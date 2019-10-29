@@ -1,7 +1,7 @@
 package bean;
 
 import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
@@ -12,9 +12,9 @@ public class CreateDayLeave {
 	@Id
 	private String dayleaveid;
 	@Column(name="checkout")
-	private Calendar checkout;
+	private Date checkout = new Date();
 	@Column(name="checkin")
-	private Calendar checkin;
+	private Date checkin = new Date();
 	@ManyToOne
 	@JoinColumn(name="peopleid")
 	private People people;
@@ -30,7 +30,7 @@ public class CreateDayLeave {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public CreateDayLeave(String dayleaveid, Calendar checkout, Calendar checkin) {
+	public CreateDayLeave(String dayleaveid, Date checkout, Date checkin) {
 		super();
 		this.dayleaveid = dayleaveid;
 		this.checkout = checkout;
@@ -42,16 +42,16 @@ public class CreateDayLeave {
 	public void setDayleaveid(String dayleaveid) {
 		this.dayleaveid = dayleaveid;
 	}
-	public Calendar getCheckout() {
+	public Date getCheckout() {
 		return checkout;
 	}
-	public void setCheckout(Calendar checkout) {
+	public void setCheckout(Date checkout) {
 		this.checkout = checkout;
 	}
-	public Calendar getCheckin() {
+	public Date getCheckin() {
 		return checkin;
 	}
-	public void setCheckin(Calendar checkin) {
+	public void setCheckin(Date checkin) {
 		this.checkin = checkin;
 	}
 	public People getPeople() {

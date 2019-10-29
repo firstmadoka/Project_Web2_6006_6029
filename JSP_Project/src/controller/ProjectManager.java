@@ -7,8 +7,8 @@ import bean.*;
 import Unity.ConnectionDB;
 
 public class ProjectManager {
-	public List<Login> getLogin(){
-		List<Login> login = new ArrayList<>();
+	public People getLogin(String peopleid){
+		People people = null;
 		ConnectionDB condb = new ConnectionDB();
 		try {
 			Connection con = condb.getConnection();
@@ -23,6 +23,6 @@ public class ProjectManager {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return login;
+		return people;
 	}
 }

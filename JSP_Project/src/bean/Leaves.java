@@ -1,6 +1,5 @@
 package bean;
-
-import java.util.Calendar;
+import java.util.Date;
 
 import javax.persistence.*;
 
@@ -10,16 +9,16 @@ public class Leaves {
 	@EmbeddedId
 	private LeaveID pk = new LeaveID();
 	@Column(name="checkout")
-	private Calendar checkout;
+	private Date checkout = new Date();
 	@Column(name="checkin")
-	private Calendar checkin;
+	private Date checkin = new Date();
 	@Column(name="detail")
 	private String detail;
 	public Leaves() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Leaves(Calendar checkout, Calendar checkin, String detail) {
+	public Leaves(Date checkout, Date checkin, String detail) {
 		super();
 		this.checkout = checkout;
 		this.checkin = checkin;
@@ -31,16 +30,16 @@ public class Leaves {
 	public void setPk(LeaveID pk) {
 		this.pk = pk;
 	}
-	public Calendar getCheckout() {
+	public Date getCheckout() {
 		return checkout;
 	}
-	public void setCheckout(Calendar checkout) {
+	public void setCheckout(Date checkout) {
 		this.checkout = checkout;
 	}
-	public Calendar getCheckin() {
+	public Date getCheckin() {
 		return checkin;
 	}
-	public void setCheckin(Calendar checkin) {
+	public void setCheckin(Date checkin) {
 		this.checkin = checkin;
 	}
 	public String getDetail() {

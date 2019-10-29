@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 import bean.*;
 
 public class HibernateConnection {
-	static String url = "jdbc:mysql://localhost:3308/projectweb2_1?characterEncoding=UTF-8";
+	static String url = "jdbc:mysql://localhost:3308/project?characterEncoding=UTF-8";
 	static String uname = "root";
 	static String pwd = "root";
 	public static SessionFactory sessionFactory;

@@ -1,6 +1,7 @@
 package Unity;
 
-import java.util.Calendar;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,10 +16,11 @@ public class Run {
 		Transaction tx = null;
 		try {
 			tx = session.beginTransaction();
-			Calendar c1 = Calendar.getInstance();
-			c1.set(1998, 01, 11);
-			People p1 = new People("6004106306","chanaphat","jeensawat","0864395619",c1,"215");
-			People p2 = new People("1234567890","SomJai","Jaidee","086699969",c1,null);
+			SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+			String dateInString = "11-01-1998";
+			Date date = sdf.parse(dateInString);
+			People p1 = new People("6004106306","chanaphat","jeensawat","0864395619",date,"215");
+			People p2 = new People("1234567890","SomJai","Jaidee","086699969",date,null);
 			Types t1 = new Types("1","Student");
 			Types t2 = new Types("2","Header");
 			Domitory dom1 = new Domitory("7","Srikraseat");

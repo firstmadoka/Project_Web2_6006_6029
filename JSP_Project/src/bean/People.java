@@ -1,7 +1,7 @@
 package bean;
 
 import java.util.ArrayList;
-import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.*;
@@ -18,7 +18,7 @@ public class People {
 	@Column(name = "phonenumber")
 	private String phonenumber;
 	@Column(name = "peoplebirthday")
-	private Calendar peoplebirthday = Calendar.getInstance();
+	private Date peoplebirthday = new Date();
 	@Column(name = "roomnumber")
 	private String roomnumber;
 	@Column(name = "email")
@@ -61,7 +61,7 @@ public class People {
 		// TODO Auto-generated constructor stub
 	}
 	public People(String peopleid, String peoplefirstname, String peoplelastname, String phonenumber,
-			Calendar peoplebirthday, String roomnumber) {
+			Date peoplebirthday, String roomnumber) {
 		super();
 		this.peopleid = peopleid;
 		this.peoplefirstname = peoplefirstname;
@@ -71,7 +71,7 @@ public class People {
 		this.roomnumber = roomnumber;
 	}
 	public People(String peopleid, String peoplefirstname, String peoplelastname, String phonenumber,
-			Calendar peoplebirthday, String roomnumber, String email, String facebook, String line) {
+			Date peoplebirthday, String roomnumber, String email, String facebook, String line) {
 		super();
 		this.peopleid = peopleid;
 		this.peoplefirstname = peoplefirstname;
@@ -107,10 +107,10 @@ public class People {
 	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
 	}
-	public Calendar getPeoplebirthday() {
+	public Date getPeoplebirthday() {
 		return peoplebirthday;
 	}
-	public void setPeoplebirthday(Calendar peoplebirthday) {
+	public void setPeoplebirthday(Date peoplebirthday) {
 		this.peoplebirthday = peoplebirthday;
 	}
 	public String getRoomnumber() {
