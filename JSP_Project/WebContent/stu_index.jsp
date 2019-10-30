@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="java.util.*,bean.*,controller.*,java.text.*"%>
+<% Login login = (Login) session.getAttribute("login"); 
+	ProjectManager pjm = new ProjectManager();
+	People people = pjm.getPeopleByID(login.getUsername());
+	List<News> newss = pjm.getNewsByDomitory(people.getDomitory().getDomitoryid());
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,85 +28,42 @@
 	<div style="margin-left: 20%">
 
 
-<div class="container">
-        <div class="row mb-5 ">
-          <div class="col-md-7 text-center mx-auto">
-            
-            <h2 class="serif">News</h2>
-          </div>
-        </div>
+		<div class="container">
+			<div class="row mb-5 ">
+				<div class="col-md-7 text-center mx-auto">
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="img/d2.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">หอเทพนฤมิต</</a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก<<</ </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="img/d1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">หอวิทยศิลป์</<            </a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p>
-              </div>
-            </div>
-          </div>
+					<h2 class="serif">News</h2>
+				</div>
+			</div>
 
-          <div class="col-md-6">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="img/d1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">หอวิทยศิลป์</<            </a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-6">
-            <div class="post-entry-1 h-100">
-              <a href="single.html">
-                <img src="img/d1.jpg" alt="Image" class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                
-                <h2><a href="single.html">หอวิทยศิลป์</<            </a></h2>
-                <span class="meta d-inline-block mb-3">July 17, 2019 <span class="mx-2">by</span> <a href="#">Admin</a></span>
-                <p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-							ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-							ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+			<div class="row">
+				<%for(News n : newss){ %>
+				<div class="col-md-6">
+					<div class="post-entry-1 h-100">
+						<a href="AcNews?newsid=<%= n.getNewsid() %>"> <img src="img/d2.jpg" alt="Image"
+							class="img-fluid">
+						</a>
+						<div class="post-entry-1-contents">
+
+							<h2>
+								<a href="AcNews?newsid=<%= n.getNewsid() %>"><%= n.getNewsid() %><%= n.getNewstitle() %></a>
+							</h2>
+							<span class="meta d-inline-block mb-3"><%= n.getNewscreated().getTime() %>
+								<span class="mx-2">by</span> <a href="#"><%= n.getPeople().getPeoplefirstname() %></a></span>
+							<p><%= n.getNewsdiscription() %>
+							</p>
+						</div>
+					</div>
+				</div>
+				<% } %>
+			</div>
+		</div>
 
 
 
 
 
-	<script>
+		<script>
 		var myIndex = 0;
 		carousel();
 
@@ -119,48 +82,51 @@
 		}
 	</script>
 
-	<div class="vertical-nav bg-white" id="sidebar">
-		<div class="py-4 px-3 mb-4 bg-light">
-			<div class="media d-flex align-items-center">
-				<img
-					src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png"
-					alt="..." width="65"
-					class="mr-3 rounded-circle img-thumbnail shadow-sm">
-				<div class="media-body">
-					<h4 class="m-0">Jason Doe</h4>
-					<p class="font-weight-light text-muted mb-0">Web developer</p>
+		<div class="vertical-nav bg-white" id="sidebar">
+			<div class="py-4 px-3 mb-4 bg-light">
+				<div class="media d-flex align-items-center">
+					<img
+						src="https://res.cloudinary.com/mhmd/image/upload/v1556074849/avatar-1_tcnd60.png"
+						alt="..." width="65"
+						class="mr-3 rounded-circle img-thumbnail shadow-sm">
+					<div class="media-body">
+						<h4 class="m-0"><%=people.getPeoplefirstname() %>
+							<%= people.getPeoplelastname() %></h4>
+						<p class="font-weight-light text-muted mb-0"><%= people.getType().getTypedetail() %>,<%=people.getDomitory().getDomitoryname() %></p>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<p
-			class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
+			<p
+				class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Main</p>
 
-		<ul class="nav flex-column bg-white mb-0">
-			<li class="nav-item"><a href="#"
-				class="nav-link text-dark font-italic bg-light"> <i
-					class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
-			</a></li>
-			<li class="nav-item"><a href="stu_DormitoryData.jsp"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-address-card mr-3 text-primary fa-fw"></i> ข้อมูลหอพัก
-			</a></li>
-			<li class="nav-item"><a href="stu_CheckName.jsp"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-cubes mr-3 text-primary fa-fw"></i> ตรวจสถานะเช็คชื่อ
-			</a></li>
-			<li class="nav-item"><a href="stu_DormitoryLeave.jsp"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ขออนุญาตลาหอพัก
-			</a></li>
-			
-			<li class="nav-item"><a href="login.jsp"
-				class="nav-link text-dark font-italic"> <i
-					class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
-			</a></li>
-		</ul>
+			<ul class="nav flex-column bg-white mb-0">
+				<li class="nav-item"><a href="#"
+					class="nav-link text-dark font-italic bg-light"> <i
+						class="fa fa-th-large mr-3 text-primary fa-fw"></i> หน้าแรก
+				</a></li>
+				<li class="nav-item"><a href="stu_DormitoryData.jsp"
+					class="nav-link text-dark font-italic"> <i
+						class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+						ข้อมูลหอพัก
+				</a></li>
+				<li class="nav-item"><a href="stu_CheckName.jsp"
+					class="nav-link text-dark font-italic"> <i
+						class="fa fa-cubes mr-3 text-primary fa-fw"></i> ตรวจสถานะเช็คชื่อ
+				</a></li>
+				<li class="nav-item"><a href="stu_DormitoryLeave.jsp"
+					class="nav-link text-dark font-italic"> <i
+						class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+						ขออนุญาตลาหอพัก
+				</a></li>
 
-		<!-- <ul class="nav flex-column bg-white mb-0">
+				<li class="nav-item"><a href="login.jsp"
+					class="nav-link text-dark font-italic"> <i
+						class="fa fa-picture-o mr-3 text-primary fa-fw"></i> ออกจากระบบ
+				</a></li>
+			</ul>
+
+			<!-- <ul class="nav flex-column bg-white mb-0">
 			<li class="nav-item"><a href="#"
 				class="nav-link text-dark font-italic"> <i
 					class="fa fa-area-chart mr-3 text-primary fa-fw"></i> Area charts
@@ -178,12 +144,12 @@
 					class="fa fa-line-chart mr-3 text-primary fa-fw"></i> Line charts
 			</a></li>
 		</ul> -->
-	</div>
-	<!-- End vertical navbar -->
+		</div>
+		<!-- End vertical navbar -->
 
 
 
-	<script type="text/javascript">
+		<script type="text/javascript">
 		$(function() {
 			// Sidebar toggle behavior
 			$('#sidebarCollapse').on('click', function() {
@@ -191,6 +157,5 @@
 			});
 		});
 	</script>
-
 </body>
 </html>

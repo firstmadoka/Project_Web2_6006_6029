@@ -12,6 +12,13 @@ public class CheckDate {
 	private Calendar datechk = Calendar.getInstance();
 	@Column(name="location")
 	private String location;
+	
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	@Column(name="status")
 	private String status;
 	@ManyToOne(cascade = CascadeType.ALL)

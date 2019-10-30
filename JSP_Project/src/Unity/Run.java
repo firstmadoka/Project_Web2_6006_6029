@@ -1,6 +1,7 @@
 package Unity;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 import org.hibernate.Session;
@@ -30,6 +31,36 @@ public class Run {
 			p2.setDomitory(dom1);
 			session.save(p1);
 			session.save(p2);
+			CheckDate c1 = new CheckDate();
+			Calendar dc = Calendar.getInstance();
+			c1.setDatechk(dc);
+			c1.setPeople(p1);
+			c1.setStatus("Stay");
+			session.save(c1);
+			News n1 = new News();
+			Calendar dn = Calendar.getInstance();
+			n1.setNewsid("1");
+			n1.setHints(0);
+			n1.setNewscreated(dn);
+			n1.setNewsdiscription("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+			n1.setNewstitle("Test");
+			n1.setPeople(p2);
+			session.save(n1);
+			CreateDayLeave cdl1 = new CreateDayLeave();
+			cdl1.setDayleaveid("1");
+			cdl1.setCheckout(new Date());
+			cdl1.setCheckout(new Date());
+			cdl1.setPeople(p2);
+			session.save(cdl1);
+			Leaves l1 = new Leaves();
+			l1.setCheckin(new Date());
+			l1.setCheckout(new Date());
+			l1.setDetail("Go Home!!!!!!!");
+			LeaveID lid1 = new LeaveID();
+			lid1.setDayleave(cdl1);
+			lid1.setPeople(p1);
+			l1.setPk(lid1);
+			session.save(l1);
 			tx.commit();
 			
 			System.out.println("insert successfully!!");

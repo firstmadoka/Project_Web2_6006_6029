@@ -76,7 +76,7 @@ public class Loginservlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		
 		Login login = new Login(uname,pwd);
-		LoginManager lm= new LoginManager();
+		LoginManager lm = new LoginManager();
 		boolean result = lm.verifyLogin(login);
 		if(result) {
 			session.setAttribute("login", login);

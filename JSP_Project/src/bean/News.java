@@ -8,7 +8,15 @@ import javax.persistence.*;
 @Table(name="news")
 public class News {
 	@Id
+	private String newsid;
+	@Column(name="newscreated")
 	private Calendar newscreated = Calendar.getInstance();
+	public String getNewsid() {
+		return newsid;
+	}
+	public void setNewsid(String newsid) {
+		this.newsid = newsid;
+	}
 	@Column(name="newstitle")
 	private String newstitle;
 	@Column(name="newsdiscription")
