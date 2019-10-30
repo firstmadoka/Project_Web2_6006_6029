@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -78,10 +79,18 @@ public class Loginservlet extends HttpServlet {
 		Login login = new Login(uname,pwd);
 		LoginManager lm = new LoginManager();
 		boolean result = lm.verifyLogin(login);
+		String typeid = lm.getType(login);
 		if(result) {
-			session.setAttribute("login", login);
-			session.setMaxInactiveInterval(60*15);
-			response.sendRedirect("stu_index.jsp");
+			if(typeid.equals("1")) {
+				session.setAttribute("login", login);
+				session.setMaxInactiveInterval(60*15);
+				response.sendRedirect("stu_index.jsp");
+			}else {
+				session.setAttribute("login", login);
+				session.setMaxInactiveInterval(60*15);
+				response.sendRedirect("hd_index.jsp");
+			}
+			
 		}else {
 			request.setAttribute("error", "wrong username and password!! ");
 			goTo("/Login.jsp", request ,response);

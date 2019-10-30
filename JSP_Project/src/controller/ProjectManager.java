@@ -46,7 +46,7 @@ public class ProjectManager {
 		List<Login> list = new ArrayList<Login>();
 		ConnectionDB condb = new ConnectionDB();
 		
-		String sql = "select peopleid,peoplebirthday from people";
+		String sql = "select peopleid,peoplebirthday,types.typeid,typedetail from people inner join types on people.typeid = types.typeid";
 		try {
 			Connection con = condb.getConnection();
 			Statement stmt = con.createStatement();
@@ -57,6 +57,10 @@ public class ProjectManager {
 				SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
 				String date = sdf.format(rs.getDate(2));
 				l.setPassword(date);
+				Types t = new Types();
+				t.setTypeid(rs.getString(3));
+				t.setTypedetail(rs.getString(4));
+				l.setTypes(t);
 				list.add(l);
 				
 			}

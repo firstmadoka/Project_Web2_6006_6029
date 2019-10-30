@@ -3,6 +3,13 @@ package bean;
 public class Login {
 	private String username;
 	private String password;
+	private Types types;
+	public Types getTypes() {
+		return types;
+	}
+	public void setTypes(Types types) {
+		this.types = types;
+	}
 	public Login() {
 		super();
 		// TODO Auto-generated constructor stub

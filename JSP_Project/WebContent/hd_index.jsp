@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ page import="java.util.*,bean.*,controller.*,java.text.*"%>
+<% Login login = (Login) session.getAttribute("login"); 
+	ProjectManager pjm = new ProjectManager();
+	People people = pjm.getPeopleByID(login.getUsername());
+	List<News> newss = pjm.getNewsByDomitory(people.getDomitory().getDomitoryid());
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,22 +37,20 @@
 			</div>
 
 			<div class="row">
+			<%for(News n : newss){ %>
 				<div class="col-lg-4 col-md-6 mb-4">
 					<div class="post-entry-1 h-100">
-						<a href="single.html"> <img src="img/d2.jpg" alt="Image"
+						<a href="AcNews?newsid=<%= n.getNewsid() %>"> <img src="img/d2.jpg" alt="Image"
 							class="img-fluid">
 						</a>
 						<div class="post-entry-1-contents">
 
 							<h2>
-								<a href="single.html">หอเทพนฤมิต</</a>
+								<a href="AcNews?newsid=<%= n.getNewsid() %>"><%= n.getNewstitle() %></a>
 							</h2>
-							<span class="meta d-inline-block mb-3">July 17, 2019 <span
-								class="mx-2">by</span> <a href="#">Admin</a></span>
-							<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-								ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-								ภายในมหาวิทยาลัย
-								เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก<<</</p>
+							<span class="meta d-inline-block mb-3"><%= n.getNewscreated().getTime() %><span
+								class="mx-2">by</span> <a href="#"><%= n.getPeople().getPeoplefirstname() %></a></span>
+							<p><%= n.getNewsdiscription() %></p>
 
 							<div class="form-group row">
 								<div class="col-md-3 ">
@@ -63,101 +67,10 @@
 
 					</div>
 				</div>
-				
-				<div class="col-lg-4 col-md-6 mb-4"">
-					<div class="post-entry-1 h-100">
-						<a href="single.html"> <img src="img/d1.jpg" alt="Image"
-							class="img-fluid">
-						</a>
-						<div class="post-entry-1-contents">
-
-							<h2>
-								<a href="single.html">หอวิทยศิลป์</< </a>
-							</h2>
-							<span class="meta d-inline-block mb-3">July 17, 2019 <span
-								class="mx-2">by</span> <a href="#">Admin</a></span>
-							<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-								ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-								ภายในมหาวิทยาลัย เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</p>
-								
-								<div class="form-group row">
-								<div class="col-md-3 ">
-									<input type="submit" class="btn btn-outline-success"
-										value="แก้ไข">
-								</div>
-								<div class="col-md-3 ">
-									<input type="reset" class="btn btn-outline-danger"
-										value="ลบ">
-								</div>
-							</div>
-							         </div> 
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 mb-4"">
-						<div class="post-entry-1 h-100">
-							<a href="single.html"> <img src="img/d1.jpg" alt="Image"
-								class="img-fluid">
-							</a>
-							<div class="post-entry-1-contents">
-
-								<h2>
-									<a href="single.html">หอวิทยศิลป์</< </a>
-								</h2>
-								<span class="meta d-inline-block mb-3">July 17, 2019 <span
-									class="mx-2">by</span> <a href="#">Admin</a></span>
-								<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-									ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-									ภายในมหาวิทยาลัย
-									เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</</p>
-									
-									<div class="form-group row">
-								<div class="col-md-3 ">
-									<input type="submit" class="btn btn-outline-success"
-										value="แก้ไข">
-								</div>
-								<div class="col-md-3 ">
-									<input type="reset" class="btn btn-outline-danger"
-										value="ลบ">
-								</div>
-							</div>
-							</div>
-
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6 mb-4"	">
-						<div class="post-entry-1 h-100">
-							<a href="single.html"> <img src="img/d1.jpg" alt="Image"
-								class="img-fluid">
-							</a>
-							<div class="post-entry-1-contents">
-
-								<h2>
-									<a href="single.html">หอวิทยศิลป์</< </a>
-								</h2>
-								<span class="meta d-inline-block mb-3">July 17, 2019 <span
-									class="mx-2">by</span> <a href="#">Admin</a></span>
-								<p>ทีมหอพักนักศึกษามหาวิทยาลัยแม่โจ้
-									ร่วมทำกิจกรรมเชิงรุกในการลดปริมาณยุ่งลายในเขตพื้นที่ของหอพัก
-									ภายในมหาวิทยาลัย
-									เพื่อความปลอดภัยของสุขภาพนักศึกษาที่พักในหอพัก</</p>
-									
-									<div class="form-group row">
-								<div class="col-md-3 ">
-									<input type="submit" class="btn btn-outline-success"
-										value="แก้ไข">
-								</div>
-								<div class="col-md-3 ">
-									<input type="reset" class="btn btn-outline-danger"
-										value="ลบ">
-								</div>
-							</div>
-							</div>
-						</div>
-					</div>
+				<% } %>
 				</div>
-			</div>
+				</div>
+				</div>
 
 
 
@@ -190,8 +103,8 @@
 							alt="..." width="65"
 							class="mr-3 rounded-circle img-thumbnail shadow-sm">
 						<div class="media-body">
-							<h4 class="m-0">Jason Doe</h4>
-							<p class="font-weight-light text-muted mb-0">Web developer</p>
+							<h4 class="m-0">><%=people.getPeoplefirstname() %> <%= people.getPeoplelastname() %></h4>
+							<p class="font-weight-light text-muted mb-0"><%= people.getType().getTypedetail() %>,<%=people.getDomitory().getDomitoryname() %></p>
 						</div>
 					</div>
 				</div>
