@@ -59,7 +59,10 @@ public class Run {
 			n1.setPeople(p2);
 			session.save(n1);
 			CreateDayLeave cdl1 = new CreateDayLeave();
-			cdl1.setDayleaveid("1");
+			CreateDayLeaveID cdlid1 = new CreateDayLeaveID();
+			cdlid1.setDom(dom1);
+			cdlid1.setRound("1");
+			cdl1.setPk(cdlid1);
 			cdl1.setCheckout(new Date());
 			cdl1.setCheckout(new Date());
 			cdl1.setPeople(p2);

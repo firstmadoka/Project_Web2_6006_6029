@@ -9,8 +9,8 @@ import javax.persistence.*;
 @Entity
 @Table(name="createdayleave")
 public class CreateDayLeave {
-	@Id
-	private String dayleaveid;
+	@EmbeddedId
+	private CreateDayLeaveID pk = new CreateDayLeaveID();
 	@Column(name="checkout")
 	private Date checkout = new Date();
 	@Column(name="checkin")
@@ -30,17 +30,25 @@ public class CreateDayLeave {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public CreateDayLeave(String dayleaveid, Date checkout, Date checkin) {
+	
+	public CreateDayLeave(Date checkout, Date checkin) {
 		super();
-		this.dayleaveid = dayleaveid;
 		this.checkout = checkout;
 		this.checkin = checkin;
 	}
-	public String getDayleaveid() {
-		return dayleaveid;
+	public CreateDayLeave(CreateDayLeaveID pk, Date checkout, Date checkin, People people, List<Leaves> leaves) {
+		super();
+		this.pk = pk;
+		this.checkout = checkout;
+		this.checkin = checkin;
+		this.people = people;
+		this.leaves = leaves;
 	}
-	public void setDayleaveid(String dayleaveid) {
-		this.dayleaveid = dayleaveid;
+	public CreateDayLeaveID getPk() {
+		return pk;
+	}
+	public void setPk(CreateDayLeaveID pk) {
+		this.pk = pk;
 	}
 	public Date getCheckout() {
 		return checkout;

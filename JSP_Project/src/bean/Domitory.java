@@ -15,6 +15,15 @@ public class Domitory {
 	private String Domitoryname;
 	@OneToMany(cascade = {CascadeType.ALL},mappedBy="pk.dom")
 	private List<Room> rooms = new ArrayList<Room>();
+	@OneToMany(cascade = {CascadeType.ALL},mappedBy="pk.dom")
+	private List<CreateDayLeave> create = new ArrayList<CreateDayLeave>();
+	
+	public List<CreateDayLeave> getCreate() {
+		return create;
+	}
+	public void setCreate(List<CreateDayLeave> create) {
+		this.create = create;
+	}
 	public List<Room> getRooms() {
 		return rooms;
 	}
