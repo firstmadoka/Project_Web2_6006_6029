@@ -1,5 +1,8 @@
 package bean;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,6 +13,14 @@ public class Domitory {
 	private String Domitoryid;
 	@Column(name="domitoryname")
 	private String Domitoryname;
+	@OneToMany(cascade = {CascadeType.ALL},mappedBy="pk.dom")
+	private List<Room> rooms = new ArrayList<Room>();
+	public List<Room> getRooms() {
+		return rooms;
+	}
+	public void setRooms(List<Room> rooms) {
+		this.rooms = rooms;
+	}
 	public String getDomitoryid() {
 		return Domitoryid;
 	}

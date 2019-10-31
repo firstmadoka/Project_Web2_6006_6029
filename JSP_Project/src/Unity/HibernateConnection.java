@@ -27,7 +27,8 @@ public class HibernateConnection {
 				.addAnnotatedClass(CheckDate.class)
 				.addAnnotatedClass(News.class)
 				.addAnnotatedClass(CreateDayLeave.class)
-				.addAnnotatedClass(Leaves.class);
+				.addAnnotatedClass(Leaves.class)
+				.addAnnotatedClass(Room.class);
 		StandardServiceRegistryBuilder ssrb = new StandardServiceRegistryBuilder().applySettings(cfg.getProperties());
 		sessionFactory = cfg.buildSessionFactory(ssrb.build());
 		return sessionFactory;

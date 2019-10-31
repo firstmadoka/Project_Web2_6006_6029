@@ -19,34 +19,32 @@ public class People {
 	private String phonenumber;
 	@Column(name = "peoplebirthday")
 	private Date peoplebirthday = new Date();
-	@Column(name = "roomnumber")
-	private String roomnumber;
 	@Column(name = "email")
 	private String email;
 	@Column(name = "facebook")
 	private String facebook;
 	@Column(name = "Line")
 	private String Line;
-	
+	@OneToMany(cascade = {CascadeType.ALL},mappedBy="pk.people")
+	private List<CheckDate> chk = new ArrayList<CheckDate>();
 	@ManyToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="typeid")
 	private Types type;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="domitoryid")
-	private Domitory domitory;
+	@OneToMany(cascade = {CascadeType.ALL},mappedBy="pk.people")
+	private List<Room> rooms = new ArrayList<Room>();
 	
+	public List<Room> getRooms() {
+		return rooms;
+	}
+	public void setRooms(List<Room> rooms) {
+		this.rooms = rooms;
+	}
 	public Types getType() {
 		return type;
 	}
 	public void setType(Types type) {
 		this.type = type;
-	}
-	public Domitory getDomitory() {
-		return domitory;
-	}
-	public void setDomitory(Domitory domitory) {
-		this.domitory = domitory;
 	}
 	public List<Leaves> getLeaves() {
 		return leaves;
@@ -68,7 +66,6 @@ public class People {
 		this.peoplelastname = peoplelastname;
 		this.phonenumber = phonenumber;
 		this.peoplebirthday = peoplebirthday;
-		this.roomnumber = roomnumber;
 	}
 	public People(String peopleid, String peoplefirstname, String peoplelastname, String phonenumber,
 			Date peoplebirthday, String roomnumber, String email, String facebook, String line) {
@@ -78,7 +75,6 @@ public class People {
 		this.peoplelastname = peoplelastname;
 		this.phonenumber = phonenumber;
 		this.peoplebirthday = peoplebirthday;
-		this.roomnumber = roomnumber;
 		this.email = email;
 		this.facebook = facebook;
 		Line = line;
@@ -113,12 +109,7 @@ public class People {
 	public void setPeoplebirthday(Date peoplebirthday) {
 		this.peoplebirthday = peoplebirthday;
 	}
-	public String getRoomnumber() {
-		return roomnumber;
-	}
-	public void setRoomnumber(String roomnumber) {
-		this.roomnumber = roomnumber;
-	}
+	
 	public String getEmail() {
 		return email;
 	}

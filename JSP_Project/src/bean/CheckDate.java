@@ -7,11 +7,10 @@ import javax.persistence.*;
 @Entity
 @Table
 public class CheckDate {
-	@Id
+	@EmbeddedId
+	private CheckDateID pk = new CheckDateID();
 	@Column(name="datechk")
 	private Calendar datechk = Calendar.getInstance();
-	@Column(name="location")
-	private String location;
 	
 	public String getStatus() {
 		return status;
@@ -21,9 +20,6 @@ public class CheckDate {
 	}
 	@Column(name="status")
 	private String status;
-	@ManyToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name="peopleid")
-	private People people;
 	public Calendar getDatechk() {
 		return datechk;
 	}
@@ -34,21 +30,15 @@ public class CheckDate {
 	public CheckDate(Calendar datechk, String location) {
 		super();
 		this.datechk = datechk;
-		this.location = location;
 	}
 	public void setDatechk(Calendar datechk) {
 		this.datechk = datechk;
 	}
-	public String getLocation() {
-		return location;
+	public CheckDateID getPk() {
+		return pk;
 	}
-	public void setLocation(String location) {
-		this.location = location;
+	public void setPk(CheckDateID pk) {
+		this.pk = pk;
 	}
-	public People getPeople() {
-		return people;
-	}
-	public void setPeople(People people) {
-		this.people = people;
-	}
+	
 }
